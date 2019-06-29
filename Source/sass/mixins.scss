@@ -1,0 +1,23 @@
+@mixin visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container() {
+  width: 1146px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin: 0 auto;
+}

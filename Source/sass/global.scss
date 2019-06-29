@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.site-wrapper {
+  @include container;
+}
+
+.background-1 {
+  background-color: $background-1;
+  background-image: url(../img/background1.jpg);
+}
+
+.background-2 {
+  background-color: $background-2;
+  background-image: url(../img/background2.jpg);
+}
+
+.background-3 {
+  background-color: $background-3;
+  background-image: url(../img/background3.jpg);
+}
