@@ -1,3 +1,50 @@
 .page-header {
   padding-top: 10px;
 }
+
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__left-side {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-header__right-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-header__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include reset-list;
+}
+
+.page-header__search {
+  display: none;
+}
+
+.page-header__shedule {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.page-header__phone {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}

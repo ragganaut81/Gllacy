@@ -8,52 +8,58 @@
   <body class="background-1">
     <div class="site-wrapper">
       <header class="page-header">
-        <nav class="main-nav">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo.png" width="154" height="64" alt="Магазин «Глэйси»">
-          </a>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">Каталог</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">О компании</a>
-            </li>
-          </ul>
-          <form class="main-nav__search" action="https://echo.htmlacademy.ru" method="get">
-            <input name="s" placeholder="Поиск:" type="search">
-            <button class="main-nav__search-button" type="submit">Поиск</button>
-          </form>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__login" href="login.html">Войти</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__cart" href="#">Пусто</a>
-            </li>
-          </ul>
+        <nav class="page-header__nav">
+          <div class="page-header__left-side">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logo.png" width="154" height="64" alt="Магазин «Глэйси»">
+            </a>
+            <ul class="page-header__list site-list">
+              <li class="site-list__item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">О компании</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-header__right-side">
+            <form class="page-header__search" action="https://echo.htmlacademy.ru" method="get">
+              <input name="s" placeholder="Поиск:" type="search">
+              <button class="page-header__search-button" type="submit">Поиск</button>
+            </form>
+            <ul class="page-header__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__login" href="login.html">Войти</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__cart" href="#">Пусто</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <p class="page-header__shedule">С 10 до 20 ежедневно</p>
         <p class="page-header__phone">8 812 450-25-25</p>
       </header>
-      <main>
+    </div>
+    <main>
+      <div class="site-wrapper">
         <h1 class="visually-hidden">Магазин Глэйси</h1>
 
         <section class="slider">
           <h2 class="visually-hidden">Слайдер</h2>
           <ul class="slider__list">
-            <li class="slider__item">
+            <li class="slider__item slider__item--1">
               <h3 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
               <a class="slider__button button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item slider__item--2">
               <h3 class="slider__title">Шоколадный пломбир и лимонный сорбет</h2>
               <a class="slider__button button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item slider__item--3">
               <h3 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
               <a class="slider__button button" href="#">Давайте оба!</a>
             </li>
@@ -116,10 +122,10 @@
               <p class="features__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             </li>
             <li class="features__item">
-              <p class="features__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+              <p class="features__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="features__item">
-              <p class="features__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+              <p class="features__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </li>
             <li class="features__item">
               <p class="features__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -134,32 +140,35 @@
           </section>
 
           <section class="mailing">
-            <h2 class="visually-hidden">Рассылка</h2>
-            <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" placeholder="Электронная почта">
-              <button class="button mailing__button" type="submit">Отправить</button>
-            </form>
+            <div class="mailing__border">
+              <h2 class="visually-hidden">Рассылка</h2>
+              <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="mailing__input" type="email" placeholder="Электронная почта">
+                <button class="button mailing__button" type="submit">Отправить</button>
+              </form>
+            </div>
           </section>
         </div>
-
-        <section class="map"></section>
-
-        <section class="feedback">
-          <ul class="feedback__list">
-            <li>
-              <h2 class="feedback__title">Адрес главного офиса и оффлайн магазина:</h2>
-              <p class="feedback__text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            </li>
-            <li>
-              <h2 class="feedback__title">Для заказов по телефону:</h2>
-              <p class="feedback__text">8 812 450-25-25</p>
-              <p class="feedback__description">(с 10 до 20 ежедневно)</p>
-            </li>
-          </ul>
-          <button class="button feedback__button" type="button">Форма обратной связи</button>
-        </section>
-      </main>
-    </div>
+      </div>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <div class="feedback__container">
+            <ul class="feedback__list">
+              <li>
+                <h2 class="feedback__title feedback__title--short">Адрес главного офиса и оффлайн магазина:</h2>
+                <p class="feedback__text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+              </li>
+              <li>
+                <h2 class="feedback__title">Для заказов по телефону:</h2>
+                <p class="feedback__text">8 812 450-25-25</p>
+                <p class="feedback__description">(с 10 до 20 ежедневно)</p>
+              </li>
+            </ul>
+            <button class="button feedback__button" type="button">Форма обратной связи</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
  </html>

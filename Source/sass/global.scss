@@ -56,3 +56,15 @@ a {
   background-color: $background-3;
   background-image: url(../img/background3.jpg);
 }
+
+.button {
+  color: $white;
+
+  background: linear-gradient(to bottom, #f26843, #db4c38);
+  box-shadow: 0 2px #aa5848;
+}
+
+.raw-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

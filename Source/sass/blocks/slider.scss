@@ -1,0 +1,47 @@
+.slider {
+  margin-top: 280px;
+  margin-bottom: 50px;
+}
+
+.slider__list {
+  @include reset-list;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__item--1 {
+  display: block;
+}
+
+.slider__item--2 {
+  display: none;
+}
+
+.slider__item--3 {
+  display: none;
+}
+
+.slider__title {
+  margin: 0 200px 40px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.slider__button {
+  padding: 7px 40px 10px;
+
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+
+  background: linear-gradient(to bottom, #f26843, #db4c38);
+  border-radius: 30px;
+}
+
+.slider__toggles {
+  @include reset-list;
+}

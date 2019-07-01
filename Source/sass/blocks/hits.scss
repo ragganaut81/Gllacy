@@ -1,0 +1,34 @@
+.hits__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hits__item {
+  position: relative;
+  width: 267px;
+}
+
+.hits__item:before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-image: url(../img/hit.jpg);
+}
+
+.hits__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hits__price {
+  position: absolute;
+  top: 160px;
+
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+}

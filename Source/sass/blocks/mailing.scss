@@ -1,0 +1,41 @@
+.mailing {
+  margin-bottom: 40px;
+  padding: 5px;
+  width: 560px;
+  height: 220px;
+
+  border-radius: 20px;
+  background-image: url(../img/post-bg.png);
+}
+
+.mailing__border {
+  padding: 20px;
+  width: 550px;
+  height: 210px;
+  border-radius: 15px;
+  background-color: $white;
+}
+
+.mailing__text {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.mailing__input {
+  width: 370px;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #999999;
+}
+
+.mailing__button {
+  padding: 8px 15px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 23px;
+}

@@ -1,0 +1,55 @@
+.banners {
+  margin-bottom: 40px;
+}
+
+.banners__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banners__item {
+  position: relative;
+  padding: 20px;
+
+  width: 560px;
+  height: 230px;
+
+  border-radius: 18px;
+}
+
+.banners__item--1 {
+  background-image: url(../img/raspberry.jpg);
+}
+
+.banners__item--2 {
+  background-image: url(../img/chokolate.jpg);
+}
+
+.banners__title {
+  margin: 0;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.banners__description {
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.banners__button {
+  position: absolute;
+  right: 20px;
+  padding: 10px 25px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  border-radius: 23px;
+
+}
