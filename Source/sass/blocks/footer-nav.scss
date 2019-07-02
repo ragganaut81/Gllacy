@@ -1,0 +1,26 @@
+.footer-nav {
+  margin-top: 20px;
+}
+
+.footer-nav__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 350px;
+}
+
+.footer-nav__item a {
+  display: block;
+  width: 170px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $white;
+}
+
+.footer-nav__item--like a {
+  font-weight: 700;
+}
