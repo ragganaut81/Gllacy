@@ -3,9 +3,11 @@
 }
 
 .site-list__item a {
-  line-height: 18px;
-  font-weight: 700;
-  color: $white;
+  //*margin-left: 5px;
 
-  margin-left: 25px;
+  //*background-color: rgba(255, 255, 255, 0);
+}
+
+.site-list__item a:focus, .site-list__item a:hover {
+
 }

@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .page-header__nav {
@@ -17,15 +17,105 @@
   justify-content: flex-end;
 }
 
+.page-header__logo {
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
 .page-header__list {
   display: flex;
   justify-content: space-between;
 
   @include reset-list;
+  padding-top: 20px;
+}
+
+.page-header__list li {
+  position: relative;
+}
+
+.page-header__item {
+  position: relative;
+  padding: 5px 14px 7px;
+
+  line-height: 18px;
+  font-weight: 700;
+  color: $white;
+
+  border-radius: 18px;
+}
+
+.page-header__item--login,
+.page-header__item--cart {
+  padding: 8px 15px 7px 46px;
+  margin-left: 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-header__item:focus,
+.page-header__item:hover {
+  color: $black;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.page-header__sub-menu {
+  position: absolute;
+  top: 35px;
+  left: -7px;
+
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-out 0.1s;
+}
+
+.page-header__item--sub-menu a:focus + .page-header__sub-menu,
+.page-header__item--sub-menu:hover .page-header__sub-menu,
+.page-header__sub-menu:focus,
+.page-header__sub-menu:hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 .page-header__search {
   display: none;
+}
+
+.page-header__item--login::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  width: 21px;
+  height: 19px;
+  background-image: url(../img/enter-white.svg);
+}
+
+.page-header__item--login:focus::before,
+.page-header__item--login:hover::before {
+  background-image: url(../img/enter-black.svg);
+}
+
+.page-header__item--cart::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url(../img/cart-white.svg);
+}
+
+.page-header__item--cart:focus::before,
+.page-header__item--cart:hover::before {
+  background-image: url(../img/cart-black.svg);
 }
 
 .page-header__shedule {

@@ -1,0 +1,48 @@
+.sub-menu {
+  width: 143px;
+
+  border-radius: 5px;
+  background-color: $white;
+}
+
+.sub-menu__title {
+  margin: 0 10px 0 6px;
+  padding: 10px 15px 12px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $black;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sub-menu__list {
+  @include reset-list;
+  padding-bottom: 5px;
+}
+
+.sub-menu__item {
+  display: block;
+  padding: 5px 20px 7px;
+  width: 143px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $black;
+}
+
+.sub-menu__item:hover,
+.sub-menu__item:focus {
+  outline: none;
+  background-color: #fbded7;
+}
+
+.sub-menu__item:active {
+  background-color: #f6b5a5;
+}
+
+.sub-menu__item--active {
+  background-color: #d07058;
+}

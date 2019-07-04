@@ -26,7 +26,18 @@
   width: 370px;
   padding: 10px;
   border-radius: 5px;
-  border-color: #999999;
+  border: 1px solid #999999;
+}
+
+.mailing__input:hover {
+  border: 2px solid #999999;
+}
+.mailing__input:focus {
+  border: 2px solid #8fbdec;
+}
+
+.mailing__input:active {
+  border: 1px solid #999999;
 }
 
 .mailing__button {
