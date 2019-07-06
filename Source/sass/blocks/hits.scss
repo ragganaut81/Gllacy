@@ -2,6 +2,7 @@
   @include reset-list;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 23px;
 }
 
 .hits__item {
@@ -19,16 +20,24 @@
 }
 
 .hits__title {
+  margin-top: 12px;
+
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .hits__price {
   position: absolute;
-  top: 160px;
+  top: 164px;
 
-  font-size: 40px;
+  font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+.hits__price--small {
+  font-size: 28px;
 }

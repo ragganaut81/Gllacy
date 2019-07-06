@@ -1,12 +1,15 @@
 .features {
-  padding: 20px;
+  padding: 19px;
   margin-bottom: 40px;
 
-  border-radius: 20px;
+  border-radius: 15px;
   background-image: url(../img/waffle.jpg);
 }
 
 .features__title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -21,10 +24,62 @@
 }
 
 .features__item {
-  padding-left: 52px;
+  padding-left: 57px;
+  padding-right: 5px;
   width: 540px;
 }
 
 .features__text {
+  position: relative;
+  margin-bottom: 6px;
+
   color: $black;
+}
+
+.features__text--1:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -56px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url(../img/icecream.png);
+}
+
+.features__text--2:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -59px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url(../img/cow.png);
+}
+
+.features__text--3:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -56px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url(../img/leaf.png);
+}
+
+.features__text--4:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -59px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url(../img/term.png);
 }

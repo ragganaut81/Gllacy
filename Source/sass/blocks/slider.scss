@@ -1,6 +1,6 @@
 .slider {
-  margin-top: 280px;
-  margin-bottom: 50px;
+  margin-top: 274px;
+  margin-bottom: 54px;
 }
 
 .slider__list {
@@ -24,7 +24,8 @@
 }
 
 .slider__title {
-  margin: 0 200px 40px;
+  margin: 0 220px 40px;
+  text-align: center;
 
   font-size: 60px;
   line-height: 60px;
@@ -32,14 +33,15 @@
 }
 
 .slider__button {
-  padding: 7px 40px 10px;
+  padding: 8px 40px 14px;
 
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
 
   background: linear-gradient(to bottom, #f26843, #db4c38);
-  border-radius: 30px;
+  border-radius: 32px;
+  box-shadow: 0 2px 2px #aa5848;
 }
 
 .slider__toggles {

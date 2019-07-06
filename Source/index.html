@@ -36,8 +36,10 @@
           </div>
           <div class="page-header__right-side">
             <form class="page-header__search" action="https://echo.htmlacademy.ru" method="get">
-              <input name="s" placeholder="Поиск:" type="search">
-              <button class="page-header__search-button" type="submit">Поиск</button>
+              <div class="page-header__search-popup">
+                <input class="page-header__search-input" name="s" placeholder="Что ищем?" type="search">
+              </div>
+              <button class="page-header__search-button" type="submit"></button>
             </form>
             <ul class="page-header__list page-header__list--user">
               <li>
@@ -104,22 +106,22 @@
             <li class="hits__item">
               <a href="#"><img width="267" height="267" src="img/Hit1.png"></a>
               <h3 class="hits__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              <p class="hits__price">310 &#8381/кг</p>
+              <p class="hits__price">310 &#8381<span class="hits__price--small">/кг</span></p>
             </li>
             <li class="hits__item">
               <a href="#"><img width="267" height="267" src="img/Hit2.png"></a>
               <h3 class="hits__title">Сливочно-кофейное с кусочками шоколада</h3>
-              <p class="hits__price">380 &#8381/кг</p>
+              <p class="hits__price">380 &#8381<span class="hits__price--small">/кг</span></p>
             </li>
             <li class="hits__item">
               <a href="#"><img width="267" height="267" src="img/Hit3.png"></a>
               <h3 class="hits__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              <p class="hits__price">355 &#8381/кг</p>
+              <p class="hits__price">355 &#8381<span class="hits__price--small">/кг</span></p>
             </li>
             <li class="hits__item">
               <a href="#"><img width="267" height="267" src="img/Hit4.png"></a>
               <h3 class="hits__title">Сливочное крем-брюле с карамельной подливкой</h3>
-              <p class="hits__price">415 &#8381/кг</p>
+              <p class="hits__price">415 &#8381<span class="hits__price--small">/кг</span></p>
             </li>
           </ul>
         </section>
@@ -128,16 +130,16 @@
           <h2 class="features__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="features__list">
             <li class="features__item">
-              <p class="features__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+              <p class="features__text features__text--1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             </li>
             <li class="features__item">
-              <p class="features__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+              <p class="features__text features__text--2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="features__item">
-              <p class="features__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+              <p class="features__text features__text--3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </li>
             <li class="features__item">
-              <p class="features__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              <p class="features__text features__text--4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </section>
@@ -145,7 +147,7 @@
         <div class="raw-wrapper">
           <section class="news">
             <h2 class="news__title">Новое в нашем блоге</h2>
-            <p class="news__text">10 способов сервировки фруктовых щербетов к столу</p>
+            <a class="news__text" href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </section>
 
           <section class="mailing">
@@ -171,7 +173,7 @@
               </li>
               <li>
                 <h3 class="feedback__title">Для заказов по телефону:</h2>
-                <p class="feedback__text">8 812 450-25-25</p>
+                <p class="feedback__tel">8 812 450-25-25</p>
                 <p class="feedback__description">(с 10 до 20 ежедневно)</p>
               </li>
             </ul>
