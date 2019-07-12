@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  width: 267px;
+}
+
+.card--hit:before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-image: url(../img/hit.jpg);
+}
+
+.card__title {
+  margin-top: 12px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.card__price {
+  position: absolute;
+  top: 164px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.card__price--small {
+  font-size: 28px;
+}
